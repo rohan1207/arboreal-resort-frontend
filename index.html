@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8RKDFTHRWM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8RKDFTHRWM");
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swaranjali - Luxury Hotel & Resort</title>
+    <meta
+      name="description"
+      content="At Swaranjali, we are passionate about sustainable architecture, interior design, and crafting exquisite products. We seamlessly integrate eco-conscious principles into every project while celebrating traditional craftsmanship."
+    />
+    <meta
+      name="keywords"
+      content="sustainable architecture, interior design, eco-conscious design, traditional craftsmanship, Madhya Pradesh, Aagaur Crafts, architectural solutions, product design"
+    />
+
+    <!-- Open Graph tags for social sharing -->
+    <meta
+      property="og:title"
+      content="Swaranjali - Luxury Hotel & Resort"
+    />
+    <meta
+      property="og:description"
+      content="Discover Swaranjali's innovative approach to luxury hotel & resort. Join us in creating spaces that inspire and endure."
+    />
+    <meta property="og:url" content="https://swaranjali.com" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Check if we need to redirect to a specific path
+      (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+          sessionStorage.removeItem("redirect");
+          if (redirect !== location.pathname) {
+            history.replaceState(null, null, redirect);
+          }
+        }
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://swaranjali.com",
+        "name": "Swaranjali",
+        "url": "https://swaranjali.com",
+        "logo1": "https://swaranjali.com/landing_logo1.png",
+        "description": "At Swaranjali, we are passionate about sustainable architecture, interior design, and crafting exquisite products that elevate spaces while contributing to a better world. Our commitment to sustainability guides our design ethos and business practices.",
+        "sameAs": [
+          "https://www.instagram.com/swaranjali",
+          "https://www.linkedin.com/company/swaranjali"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "India"
+        },
+        "subOrganization": {
+          "@type": "Organization",
+          "name": "Swaranjali",
+          "description": "Product design section of Swaranjali, collaborating with skilled artisans from across Madhya Pradesh and India to create sustainable and contemporary pieces that celebrate traditional craftsmanship."
+        }
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
